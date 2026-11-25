@@ -1,0 +1,18 @@
+{
+  "name": "Demo sounding rocket",
+  "description": "Invented example: 2.45 m, 100 mm diameter, single-stage solid motor, fin-stabilised (no TVC). z = height above the aft end.",
+  "units": "SI",
+  "radius": 0.05,
+  "components": [
+    {"name": "fin can",        "mass": 0.9, "z_bottom": 0.00, "z_top": 0.30, "radius": 0.12, "growth": 0.10, "maturity": "estimate"},
+    {"name": "body tube",      "mass": 2.1, "z_bottom": 0.00, "z_top": 2.05, "shape": "tube", "growth": 0.03, "maturity": "weighed"},
+    {"name": "motor case",     "mass": 2.6, "z_bottom": 0.04, "z_top": 1.10, "radius": 0.04, "shape": "tube", "growth": 0.03, "maturity": "weighed"},
+    {"name": "recovery",       "mass": 0.7, "z_bottom": 1.30, "z_top": 1.60, "growth": 0.10, "maturity": "estimate"},
+    {"name": "avionics bay",   "mass": 0.6, "z_bottom": 1.60, "z_top": 1.80, "growth": 0.04, "maturity": "cad"},
+    {"name": "payload",        "mass": 1.8, "z_bottom": 1.80, "z_top": 2.05, "growth": 0.04, "maturity": "cad"},
+    {"name": "nose cone",      "mass": 0.9, "z_bottom": 2.05, "z_top": 2.45, "radius": 0.03, "growth": 0.03, "maturity": "weighed"}
+  ],
+  "tanks": [
+    {"name": "solid grain",    "mass_full": 4.1, "z_bottom": 0.06, "z_top": 1.08, "inner_radius": 0.038, "residual_fraction": 0.02, "depletion": "uniform"}
+  ]
+}

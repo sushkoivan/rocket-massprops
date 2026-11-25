@@ -1,0 +1,23 @@
+{
+  "name": "Demo VTVL vehicle",
+  "description": "Invented example: 1.6 m tall, 200 mm diameter, ~45 kg bipropellant hopper with a gimballed engine. z = height above ground, legs extended.",
+  "units": "SI",
+  "radius": 0.10,
+  "pivot_z": 0.45,
+  "components": [
+    {"name": "landing legs",            "mass": 4.2, "z_bottom": 0.00, "z_top": 0.55, "radius": 0.32, "shape": "tube", "growth": 0.15, "maturity": "estimate"},
+    {"name": "engine + valves",         "mass": 6.5, "z_bottom": 0.12, "z_top": 0.40, "radius": 0.06, "growth": 0.08, "maturity": "cad"},
+    {"name": "gimbal + actuators",      "mass": 2.8, "z_bottom": 0.40, "z_top": 0.50, "radius": 0.08, "growth": 0.08, "maturity": "cad"},
+    {"name": "thrust structure",        "mass": 1.8, "z_bottom": 0.40, "z_top": 0.56, "shape": "tube", "growth": 0.15, "maturity": "estimate"},
+    {"name": "fuel tank (dry)",         "mass": 2.2, "z_bottom": 0.56, "z_top": 0.86, "shape": "tube", "growth": 0.08, "maturity": "cad"},
+    {"name": "intertank + pressurant",  "mass": 1.6, "z_bottom": 0.86, "z_top": 0.99, "growth": 0.15, "maturity": "estimate"},
+    {"name": "oxidiser tank (dry)",     "mass": 3.4, "z_bottom": 0.99, "z_top": 1.44, "shape": "tube", "growth": 0.08, "maturity": "cad"},
+    {"name": "avionics + battery",      "mass": 2.4, "z_bottom": 1.44, "z_top": 1.60, "growth": 0.03, "maturity": "weighed"},
+    {"name": "airframe",                "mass": 3.6, "z_bottom": 0.40, "z_top": 1.60, "shape": "tube", "growth": 0.15, "maturity": "estimate"},
+    {"name": "harness + plumbing",      "mass": 1.2, "z_bottom": 0.12, "z_top": 1.60, "growth": 0.15, "maturity": "estimate"}
+  ],
+  "tanks": [
+    {"name": "fuel",      "mass_full": 4.4, "z_bottom": 0.56, "z_top": 0.86, "density": 810.0,  "inner_radius": 0.096, "residual_fraction": 0.03},
+    {"name": "oxidiser",  "mass_full": 9.6, "z_bottom": 0.99, "z_top": 1.44, "density": 1140.0, "inner_radius": 0.096, "residual_fraction": 0.03}
+  ]
+}
