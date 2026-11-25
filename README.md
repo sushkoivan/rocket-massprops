@@ -3,7 +3,7 @@
 **Mass, centre-of-gravity and moment-of-inertia budgets for small vertical rockets and VTVL hoppers -- including how the thrust-vector-control lever arm and control authority change as the tanks drain.**
 
 [![CI](https://github.com/sushkoivan/rocket-massprops/actions/workflows/ci.yml/badge.svg)](https://github.com/sushkoivan/rocket-massprops/actions/workflows/ci.yml)
-![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 ![Dependencies: none](https://img.shields.io/badge/runtime%20deps-none-lightgrey)
 
@@ -29,7 +29,7 @@ Guidance, navigation & control (GNC) engineers therefore need the **whole curve*
 - **Growth allowances** per component (added at the component's own location) and a maturity summary.
 - **Sensitivity**: what does +1 kg here do to CG, lever arm and inertia?
 - JSON in, tables / CSV / PNG out. Command-line interface included.
-- Pure standard library at runtime, Python >= 3.9. Matplotlib is optional (plots only).
+- Pure standard library at runtime, Python >= 3.10. Matplotlib is optional (plots only).
 
 ## Install
 

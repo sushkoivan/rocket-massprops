@@ -9,7 +9,7 @@ description = "Mass, CG and moment-of-inertia budgets for small vertical rockets
 readme = "README.md"
 license = {text = "MIT"}
 authors = [{name = "Ivan Sushko"}]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = []
 keywords = ["rocketry", "mass properties", "center of gravity", "moment of inertia", "TVC", "VTVL"]
 classifiers = [
