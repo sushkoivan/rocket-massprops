@@ -1,0 +1,24 @@
+name: Bug report
+description: Something gives a wrong result, crashes, or looks broken
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you get instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How to reproduce
+      description: The smallest script, command or JSON case that shows the problem.
+      render: python
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version and Python
+      placeholder: "rocket-massprops 0.1.0, Python 3.12, Windows 11"

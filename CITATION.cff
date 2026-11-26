@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "rocket-massprops: Mass, CG and inertia budgets for small vertical rockets and VTVL hoppers"
+type: software
+authors:
+  - family-names: Sushko
+    given-names: Ivan
+repository-code: "https://github.com/sushkoivan/rocket-massprops"
+license: MIT
+version: 0.1.0
+date-released: "2026-11-26"
+keywords:
+  - "rocketry"
+  - "mass properties"
+  - "thrust vector control"
+  - "VTVL"
+  - "Python"

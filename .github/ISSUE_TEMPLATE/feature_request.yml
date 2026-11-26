@@ -1,0 +1,16 @@
+name: Feature request
+description: Suggest an idea or a new capability
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the engineering task you are trying to do.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Proposed solution
+      description: How you imagine it working (API sketch, equations, references welcome).
