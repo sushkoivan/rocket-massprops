@@ -17,7 +17,7 @@ so the moment you get per degree of gimbal depends on the **lever arm** $\ell$ b
 
 Guidance, navigation & control (GNC) engineers therefore need the **whole curve** -- $m$, $z_{cg}$, $I$ and $\ell$ versus propellant remaining -- not a single number from a CAD screenshot. `rocket-massprops` gives that curve from a short JSON file long before a full CAD assembly exists, and keeps the mass budget (growth allowances, maturity, what-if sensitivities) in the same place.
 
-![CG, lever arm and pitch inertia of the example hopper versus propellant remaining](docs/img/cg_vs_fill.svg)
+![CG, lever arm and pitch inertia of the example hopper versus propellant remaining](https://raw.githubusercontent.com/sushkoivan/rocket-massprops/main/docs/img/cg_vs_fill.svg)
 
 ## Features
 

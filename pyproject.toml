@@ -33,3 +33,8 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+
+[project.urls]
+Homepage = "https://github.com/sushkoivan/rocket-massprops"
+Source = "https://github.com/sushkoivan/rocket-massprops"
+Issues = "https://github.com/sushkoivan/rocket-massprops/issues"
