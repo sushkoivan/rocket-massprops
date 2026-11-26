@@ -1,11 +1,13 @@
 name: Publish to PyPI
 # Runs when a GitHub release is published. Uses PyPI trusted publishing (no API token stored in the repo):
-# on pypi.org add a "pending publisher" for this repository, workflow "publish.yml", environment "pypi".
+# on pypi.org add a "pending publisher" for this repository, workflow "publish.yml", environment "pypi",
+# then set the repository variable PYPI_ENABLED = true (Settings > Secrets and variables > Actions > Variables).
 on:
   release:
     types: [published]
 jobs:
   publish:
+    if: vars.PYPI_ENABLED == 'true'
     runs-on: ubuntu-latest
     environment: pypi
     permissions:
